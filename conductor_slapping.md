@@ -1,4 +1,3 @@
-## Conductor Slapping App
 
 This app models slapping between two conductors for a line-to-line
 fault involving these conductors. Enter the conductor and line
