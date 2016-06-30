@@ -257,8 +257,8 @@ legend:
 plotinfo.series = [{data: series}]
 $active_element.highcharts(plotinfo)
 ```
-
-<button style="btn btn-primary" type="button" onclick="$('#credits').slideToggle();">Credits</button>
+<br/><br/>
+<button style="btn btn-primary" type="button" onclick="$('#credits').slideToggle();">Credits</button><button style="btn btn-primary" type="button" onclick="$('#notes').slideToggle();">Notes</button>
 
 <div id="credits" style="display:none;">
 This app was adapted from C++ code by D. J. Ward [1] which in turn was
@@ -272,7 +272,6 @@ no. 4, pp. 1534-1538, 2003.
 Design*, Second ed, Electric Power Research Institute, Palo Alto,
 California, 1978.
 </div>
-<button style="btn btn-primary" type="button" onclick="$('#notes').slideToggle();">Notes</button>
 <div id="notes" style="display:none;">
 The magnetic field from fault current produces forces between
 conductors all along the circuit from the substation to the initial
@@ -312,4 +311,12 @@ To see the code that does the majority of the calculations, see
 [here](https://github.com/powerdistribution/powerdistribution.github.io/blob/master/calculators/FICM.js). To
 see the user interface, page calculation code, see
 [here](conductor_slapping.md).
+<p>This code is free and open source under
+        the <a href="LICENSE.txt">MIT license</a>. See
+        <a href="https://github.com/powerdistribution/powerdistribution.github.io/tree/master/calculators">here</a>
+        for source code. NO WARRANTY. This app works best with recent versions of
+        Firefox or Chrome. It may work with at least Internet Explorer
+        version 11. File bugs or feature
+        requests <a href="https://github.com/powerdistribution/powerdistribution.github.io/issues">here</a>
+        or email <a href="mailto:tshort@epri.com">me</a></p>
 </div>
