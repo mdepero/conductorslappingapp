@@ -9,7 +9,7 @@ var deferred = new $.Deferred();  // Keeps track of things that need to load bef
 $(document).ready(function() {
     $.ajax({
         type: "GET",
-        url: window.location.search.substring(1),
+        url: 'conductor_slapping.md',//window.location.search.substring(1),
         success: function (response) {
             var converter = new Showdown.converter({ extensions: ['md'] });
             $('#main_markdown').html(converter.makeHtml(response));
