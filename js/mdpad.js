@@ -7,8 +7,8 @@ var deferred = new $.Deferred();  // Keeps track of things that need to load bef
 
 // when the DOM loads
 $(document).ready(function() {
-    if(window.location.indexOf('conductor_slapping') > <0){
-        window.location = 'index.html?conductor_slapping.md'
+    if(window.location.indexOf('conductor_slapping') > 0){
+        window.location = 'index.html?conductor_slapping.md';
     }
     $.ajax({
         type: "GET",
