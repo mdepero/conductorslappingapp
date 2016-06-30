@@ -1,0 +1,38 @@
+/* tweaks to formatting */
+
+h1 {
+  font-size: 1.6em;
+}
+h2 {
+  font-size: 1.4em;
+}
+h3, h4, h5, h6 {
+  font-size: 1.2em;
+}
+
+.navbar {
+    min-height: 20px;    
+}
+
+.navbar .brand,
+.navbar .nav > li > a {
+    padding-top:    4px;
+    padding-bottom: 4px;
+    padding-left:  30px;
+    padding-right: 30px;
+}
+
+
+.navbar .brand,
+.my-sidebar .nav > li > a {
+    padding-left:  3px;
+    padding-right: 3px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #efefef;
+}
+
+li>p {
+  margin-top: 1.2em;
+}

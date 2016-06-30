@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>MD live page</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/jquery-ui.css" rel="stylesheet"/>
+        <link href="lib/jquery.handsontable.full.css" rel="stylesheet"/>
+        <link href="lib/jquery.handsontable.bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="../css/site.css" type="text/css" media="screen, projection" />
+        <link href="mdpad.css" rel="stylesheet" type="text/css" />
+        <script src="lib/head.min.js"></script>
+    <script>
+        var start = new Date();
+        head.js("lib/jquery.min.js",
+                "lib/jquery-ui.min.js",
+                "lib/underscore-min.js",
+                "lib/bootstrap.min.js",
+                "lib/js-yaml.min.js",
+                "lib/jquery.csv-0.71.min.js",
+                "lib/jquery.dform-1.1.0.min.js",
+                "lib/jquery.handsontable.full.js",
+                "js/dform_extras.js",
+                "lib/showdown.min.js",
+                "lib/jquery.flot.min.js",
+                "lib/highcharts.js",
+                "lib/numeric-1.2.6.min.js",
+                "lib/handlebars.js",
+                "lib/emblem.min.js",
+                "js/md.js",
+                "js/mdpad.js")
+        if(!window.Worker) {
+            window.alert("Browser not supported!\n\nThis app works best with a recent version of Firefox or Chrome. It may work with at least version 11 of Internet Explorer.")
+        }
+    </script>
+
+    </head>
+    <body>
+<div class="container">
+
+
+      <h1><a href="/">Electric Power Distribution
+      Handbook,</a> <span style="font-size: 80%; font-variant:small-caps;">T.&nbspA.&nbspShort</span></h1>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="button-label">Menu &#9776;</span>
+          </button>
+          <a class="navbar-brand sr-only" href="#">Brand</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li > <a href="/">Main</a> </li>
+            <li > <a href="/resources/">Resources</a> </li>
+            <li > <a href="/study/">Self study</a> </li>
+            <li  class='active'> <a href="/calculators/">Online tools</a> </li>
+            <li > <a href="/author/">Author</a> </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+      <div id="site" class="site">
+        <div id="mdpad_error_div" class="color-scheme-error">
+        </div>
+        <div id="main_markdown">
+             &nbsp;
+        </div>
+        <br/>
+        <br/>
+        <p>This code is free and open source under
+        the <a href="LICENSE.txt">MIT license</a>. See
+        <a href="https://github.com/powerdistribution/powerdistribution.github.io/tree/master/calculators">here</a>
+        for source code. NO WARRANTY. This app works best with recent versions of
+        Firefox or Chrome. It may work with at least Internet Explorer
+        version 11. File bugs or feature
+        requests <a href="https://github.com/powerdistribution/powerdistribution.github.io/issues">here</a>
+        or email <a href="mailto:tshort@epri.com">me</a></p>
+      </div>
+</div>
+    </body>
+</html>
