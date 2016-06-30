@@ -258,8 +258,9 @@ plotinfo.series = [{data: series}]
 $active_element.highcharts(plotinfo)
 ```
 
-## Credits
+<button style="btn btn-primary" type="button" onclick="$('#credits').slideToggle();">Credits</button>
 
+<div id="credits" style="display:none;">
 This app was adapted from C++ code by D. J. Ward [1] which in turn was
 adapted from FORTRAN code by J. R. Stewart [2].
 
@@ -270,9 +271,9 @@ no. 4, pp. 1534-1538, 2003.
 [2] EPRI, *Transmission Line Reference Book: 115 - 138 kV Compact Line
 Design*, Second ed, Electric Power Research Institute, Palo Alto,
 California, 1978.
-
-## Notes
-
+</div>
+<button style="btn btn-primary" type="button" onclick="$('#notes').slideToggle();">Notes</button>
+<div id="notes" style="display:none;">
 The magnetic field from fault current produces forces between
 conductors all along the circuit from the substation to the initial
 fault location. These forces can cause conductors to swing. If they
@@ -311,3 +312,4 @@ To see the code that does the majority of the calculations, see
 [here](https://github.com/powerdistribution/powerdistribution.github.io/blob/master/calculators/FICM.js). To
 see the user interface, page calculation code, see
 [here](conductor_slapping.md).
+</div>
