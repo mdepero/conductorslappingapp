@@ -1,9 +1,4 @@
 
-This app models slapping between two conductors for a line-to-line
-fault involving these conductors. Enter the conductor and line
-characteristics, the fault information, and the relative conductor
-positions. The critical clearing time is the fault duration at which
-conductors swing enough to (nearly) touch.
 
 <!-- Script loader -->
 
@@ -258,7 +253,16 @@ plotinfo.series = [{data: series}]
 $active_element.highcharts(plotinfo)
 ```
 <br/><br/>
-<button style="btn btn-primary" type="button" onclick="$('#credits').slideToggle();">Credits</button><button style="btn btn-primary" type="button" onclick="$('#notes').slideToggle();">Notes</button>
+<button class="btn btn-primary" type="button" onclick="$('#about').slideToggle();">About</button><button class="btn btn-primary" type="button" onclick="$('#credits').slideToggle();">Credits</button><button class="btn btn-primary" type="button" onclick="$('#notes').slideToggle();">Notes</button>
+<div id="about" style="display:none;">
+This app models slapping between two conductors for a line-to-line
+fault involving these conductors. Enter the conductor and line
+characteristics, the fault information, and the relative conductor
+positions. The critical clearing time is the fault duration at which
+conductors swing enough to (nearly) touch.
+<br/><br/>
+</div>
+
 
 <div id="credits" style="display:none;">
 This app was adapted from C++ code by D. J. Ward [1] which in turn was
@@ -271,6 +275,7 @@ no. 4, pp. 1534-1538, 2003.
 [2] EPRI, *Transmission Line Reference Book: 115 - 138 kV Compact Line
 Design*, Second ed, Electric Power Research Institute, Palo Alto,
 California, 1978.
+<br/><br/>
 </div>
 <div id="notes" style="display:none;">
 The magnetic field from fault current produces forces between
