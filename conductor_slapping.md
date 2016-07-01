@@ -253,7 +253,7 @@ plotinfo.series = [{data: series}]
 $active_element.highcharts(plotinfo)
 ```
 <br/><br/>
-<button class="btn btn-primary" type="button" onclick="$('#about').slideToggle();">About</button><button class="btn btn-primary" type="button" onclick="$('#credits').slideToggle();">Credits</button><button class="btn btn-primary" type="button" onclick="$('#notes').slideToggle();">Notes</button>
+<button class="btn btn-primary" type="button" onclick="$('#about').slideToggle();">About</button><button class="btn btn-info" type="button" onclick="$('#credits').slideToggle();">Credits</button><button class="btn btn-default" type="button" onclick="$('#notes').slideToggle();">Notes</button>
 <div id="about" style="display:none;">
 This app models slapping between two conductors for a line-to-line
 fault involving these conductors. Enter the conductor and line
